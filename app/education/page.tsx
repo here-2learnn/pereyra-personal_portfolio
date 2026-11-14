@@ -15,7 +15,31 @@ const educationList = [
     period: "2025 - Present",
     description:
       "Currently a second-year BSIT student, learning about programming, information technology, and computer systems.",
-    achievements: [],
+    achievements: ["Dean's Lister (first year)"],
+  },
+  {
+    degree: "UPPER SECONDARY EDUCATION",
+    institution: "Leon Q. Mercado High School",
+    period: "2022 - 2024",
+    description:
+      "I took General Academic Strand as my strand in Senior high school.",
+    achievements: ["with honor"]
+  },
+    {
+    degree: "LOWER SECONDARY EDUCATION",
+    institution: "Carlos L. Albert HighSchool",
+    period: "2019 - 2022",
+    description:
+      "I studied there from grade 7 to 9.",
+    achievements: []
+  },
+    {
+    degree: "PRIMARY EDUCATION",
+    institution: "Legarda Elementary School",
+    period: "2013 - 2019",
+    description:
+      "I was an active student then. Continuously participating in multiple events/contests such as spelling bee and reading contests inside the school.",
+    achievements: []
   },
 ];
 

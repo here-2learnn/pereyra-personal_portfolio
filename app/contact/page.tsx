@@ -22,7 +22,7 @@ export default function Contact() {
               <Mail className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-xs text-muted-foreground font-medium">Email</p>
-                <p className="text-sm font-semibold">cjpereyra.@gbox.ncf.edu.ph</p>
+                <p className="text-sm font-semibold">cjpereyra@gbox.ncf.edu.ph</p>
               </div>
             </CardContent>
           </Card>
@@ -32,8 +32,7 @@ export default function Contact() {
               <Phone className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-xs text-muted-foreground font-medium">Phone</p>
-                <p className="text-sm font-semibold">09914814237</p>
-              </div>
+                <p className="text-sm font-semibold">09914814239</p>              </div>
             </CardContent>
           </Card>
 
@@ -42,7 +41,7 @@ export default function Contact() {
               <MapPin className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-xs text-muted-foreground font-medium">Location</p>
-                <p className="text-sm font-semibold">Naga City, Philippines</p>
+                <p className="text-sm font-semibold">Urban Pacol Naga City, Philippines</p>
               </div>
             </CardContent>
           </Card>
@@ -58,11 +57,11 @@ export default function Contact() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">Name</label>
-                  <Input id="name" placeholder="FirstName Last Name" required />
+                  <Input id="name" placeholder="First Name Last Name" required />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">Email</label>
-                  <Input id="email" type="email" placeholder="yourname@example.com" required />
+                  <Input id="email" type="email" placeholder="youremail@example.com" required />
                 </div>
               </div>
 

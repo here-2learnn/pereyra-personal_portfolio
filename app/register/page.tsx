@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -23,7 +22,7 @@ export default function RegisterPage() {
   const router = useRouter();
   const { isChecking } = useAuthGuard({ requireAuth: false });
   const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState("");  
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 

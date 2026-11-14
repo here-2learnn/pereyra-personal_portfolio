@@ -5,13 +5,38 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { BookOpen } from "lucide-react";
+import { BookHeartIcon, BookOpen, CircleLetterZ, ClapperboardIcon, LucideSquareLetterZ, MicVocal, MoonStar, PencilSparklesIcon, SquareLetterP, TreeDeciduous, TreesIcon, WatchIcon } from "lucide-react";
 
 const hobbies = [
   {
     title: "Reading",
-    icon: BookOpen,
+    icon: BookHeartIcon,
     description: "I love reading in my free time.",
+  },
+  {
+    title: "Writing",
+    icon: PencilSparklesIcon,
+    description: "I also write for myself. to relieve stress, write what i cannot say, and convey ideas that has been stuck in my mind.",
+  },
+  {
+    title: "Sleeping",
+    icon: MoonStar,
+    description: "I love sleeping. anytime & anywhere.",
+  },
+  {
+    title: "Strolling",
+    icon: TreesIcon,
+    description: "I rarely go out with friends but when I do, I really enjoy the time we spend.",
+  },
+  {
+    title: "Watching",
+    icon: ClapperboardIcon,
+    description: "Watching korean dramas, Thai series, or simply tiktok videos make me feel relaxed.",
+  },
+  {
+    title: "Singing",
+    icon: MicVocal,
+    description: "I enjoy singing and listening to music every single day.",
   },
 ];
 
@@ -23,7 +48,7 @@ export default function Hobbies() {
           Hobbies & Interests
         </h1>
         <p className="text-muted-foreground mt-1">
-          What I enjoy doing outside of coding.
+          What I enjoy doing.
         </p>
       </div>
 

@@ -1,5 +1,6 @@
 
 import "./globals.css";
+import { Navbar } from "@/components/navbar";
 
 export default function RootLayout({
   children,
@@ -9,6 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
+        <Navbar />
         {children}
       </body>
     </html>

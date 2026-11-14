@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { buttonVariants } from "@/components/ui/button";
-import { Code2 } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -17,14 +16,18 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-          <Code2 className="h-6 w-6 text-primary" />
-          <span>DevPortfolio</span>
+    <header className="sticky top-0 z-50 w-full border-b border-[#e8d8c5] bg-[#fff7df]/95 backdrop-blur-md">
+      <div className="mx-auto flex min-h-20 max-w-6xl flex-wrap items-center justify-between gap-3 px-6 py-3">
+        <Link href="/" className="flex flex-col">
+          <span className="font-heading text-2xl font-semibold text-[#641e35]">
+            my little corner.
+          </span>
+          <span className="text-[10px] tracking-[0.25em] text-[#99717a]">
+            A PERSONAL PORTFOLIO
+          </span>
         </Link>
 
-        <nav className="flex items-center gap-1 sm:gap-2">
+        <nav className="flex flex-wrap items-center gap-1">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
 
@@ -32,10 +35,10 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={buttonVariants({
-                  variant: isActive ? "default" : "ghost",
-                  size: "sm",
-                })}
+                 className={buttonVariants({
+                    variant: isActive ? "default" : "ghost",
+                    size: "sm",
+})}
               >
                 {item.name}
               </Link>
